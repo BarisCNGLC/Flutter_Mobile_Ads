@@ -23,5 +23,8 @@ Add the AdMob app ID (identified in the AdMob UI) to the app's android/app/src/m
             android:name="com.google.android.gms.ads.APPLICATION_ID"
             android:value="ca-app-pub-xxxxxxxxxxxxxxxx~yyyyyyyyyy"/>
 
+-----------------------------------------------------------------------------------
+ # Initialize the Mobile Ads SDK
+Before loading ads, have your app initialize the Mobile Ads SDK by calling MobileAds.instance.initialize(), which initializes the SDK and returns a Future that finishes once initialization is complete (or after a 30-second timeout). This needs to be done only once, ideally right before running the app.
 
 
