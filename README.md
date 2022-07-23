@@ -30,7 +30,6 @@ Before loading ads, have your app initialize the Mobile Ads SDK by calling Mobil
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
   MobileAds.instance.initialize();
-
   runApp(MyApp());
 }
 --------------------------------------------------------------------------------------
